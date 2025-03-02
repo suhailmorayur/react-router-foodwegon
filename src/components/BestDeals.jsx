@@ -56,6 +56,7 @@ function BestDeals(props) {
                             <div className='px-16 flex flex-col items-center gap-6 mb-5 mt-6 lg:mt-0  lg:gap-20'>
                                 <div className='flex flex-col gap-4'>
                                 <a href={'/products/'+product.id}><h3 className='text-xl lg:text-4xl font-bold'>{product.title}</h3></a>
+                                
                                 <span className='text-[#747171]'>{product.des}</span>
                                 </div>
                           

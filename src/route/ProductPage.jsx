@@ -1,6 +1,7 @@
 import React from "react";
 
 function ProductPage() {
+  
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-300">
       <div className="flex flex-col lg:flex-row items-center justify-center gap-6 p-6 bg-white mx-6 rounded-2xl shadow-xl">

@@ -3,7 +3,7 @@ import './index.css'
 import { BrowserRouter, Routes, Route } from "react-router";
 
 import App from './App.jsx'
-import ProductPage from '../src/route/ProductPage.jsx'
+import ProductPage from './route/ProductPage.jsx'
 import Layout from './route/Layout.jsx';
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
