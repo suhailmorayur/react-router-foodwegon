@@ -1,6 +1,8 @@
 
 
 import React, { useState } from "react";
+import { Link } from "react-router";
+
 
 function PopularItems(props) {
   const [popularItems, setPopularItems] = useState([
@@ -53,7 +55,10 @@ function PopularItems(props) {
             src={product.image}
             alt={product.title}
           />
-          <a href= {'/products/'+product.id}> <h2 className="text-lg font-semibold">{product.title}</h2> </a>
+          {/* <a href= {'/products/'+product.id}> <h2 className="text-lg font-semibold">{product.title}</h2> </a> */}
+          <Link to={`/products/`+product.id}>
+  <h2 className="text-lg font-semibold">{product.title}</h2>
+</Link>
         <div className="flex flex-row items-center gap-2">
         <img src="/map.png" alt="" />
          <span className="text-[#FFB30E]"> {product.location} </span>

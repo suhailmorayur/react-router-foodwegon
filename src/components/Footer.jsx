@@ -108,7 +108,7 @@ function Footer(props) {
     <img  
           className="absolute left-3 top-1/2 transform -translate-y-1/2 "
 
-      src="./public/mail.png" 
+      src=".mail.png" 
       alt="" 
     />
   </div>
