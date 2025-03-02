@@ -6,7 +6,7 @@ function HeroSection(props) {
        <section className='mt-3'>
 
 
-<div className="relative bg-cover bg-center h-[500px] w-full" style={{ backgroundImage: "url('./public/header background.png')" }}>
+<div className="relative bg-cover bg-center h-[500px] w-full" style={{ backgroundImage: "url('/header background.png')" }}>
   <div className="absolute inset-0 flex items-center justify-start container mx-auto px-5 ">
     <div className="">
       <h1 className="text-6xl  text-white font-bold">Are you starving?</h1>

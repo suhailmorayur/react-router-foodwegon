@@ -41,12 +41,12 @@ function BestDeals(props) {
     return (
         <div className=' container grid gap-14'>
             {
-                bestDeals.map((item,index)=>(
-                    <div  key={item.id}  className={`flex items-center  rounded-2xl shadow-md ${
+                bestDeals.map((product,index)=>(
+                    <div  key={product.id}  className={`flex products-center  rounded-2xl shadow-md ${
                         index % 2 === 0 ? "flex-col lg:flex-row-reverse" : "flex-col lg:flex-row"
                       }`}>
                         <div className=''>
-                        <img  src={item.Image} alt={item.title}  className={` ${
+                        <img  src={product.Image} alt={product.title}  className={` ${
                 index % 2 === 0
                   ? "rounded-tr-2xl rounded-br-2xl" 
                   : "rounded-tl-2xl rounded-bl-2xl" 
@@ -55,8 +55,8 @@ function BestDeals(props) {
                         
                             <div className='px-16 flex flex-col items-center gap-6 mb-5 mt-6 lg:mt-0  lg:gap-20'>
                                 <div className='flex flex-col gap-4'>
-                                <a href={'/products/'+item.id}><h3 className='text-xl lg:text-4xl font-bold'>{item.title}</h3></a>
-                                <span className='text-[#747171]'>{item.des}</span>
+                                <a href={'/products/'+product.id}><h3 className='text-xl lg:text-4xl font-bold'>{product.title}</h3></a>
+                                <span className='text-[#747171]'>{product.des}</span>
                                 </div>
                           
                             <div>

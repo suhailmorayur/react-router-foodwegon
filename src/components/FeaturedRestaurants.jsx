@@ -73,23 +73,23 @@ const [featuredRestaurants, setFeaturedRestaurants] = useState([
         <div className=' container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
 
         {
-            featuredRestaurants.map((item) =>(
-                <div key={item.id}>
-<img src= {item.image} alt="" />
-            <div className='flex flex-row gap-5 mt-5 items-center '>
-                <img src={item.logo} alt="" />
+            featuredRestaurants.map((product) =>(
+                <div key={product.id}>
+<img src= {product.image} alt="" />
+            <div className='flex flex-row gap-5 mt-5 products-center '>
+                <img src={product.logo} alt="" />
                 <div className=''>
-                  <a href={'/products/'+item.id}> <h2>{item.title}</h2> </a>  
+                  <a href={'/products/'+product.id}> <h2>{product.title}</h2> </a>  
                     <div className='flex gap-2 '>
                         <img src="/star.png" alt="" />
-                        <span className='text-[#FFB30E]'>{item.rating}</span>
+                        <span className='text-[#FFB30E]'>{product.rating}</span>
                     </div>
                 </div>
             </div>
             <div className='mt-3'>
             {
-                item.status === 'Open Now'?( <span className='bg-[#E5F3D8] text-[#79B93C] font-bold rounded py-1 px-2'> {item.status} </span> )
-                 : ( <span className='bg-[#FFE1D0] text-[#F17228] font-bold rounded py-1 px-2'>{item.status}</span>
+                product.status === 'Open Now'?( <span className='bg-[#E5F3D8] text-[#79B93C] font-bold rounded py-1 px-2'> {product.status} </span> )
+                 : ( <span className='bg-[#FFE1D0] text-[#F17228] font-bold rounded py-1 px-2'>{product.status}</span>
                 )
             }
             </div>

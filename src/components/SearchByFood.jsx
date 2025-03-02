@@ -38,10 +38,10 @@ const [searchByFood,setsearchByFood] = useState([
        <>
        <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 pt-10'>
         {
-            searchByFood.map((item) =>(
-                <div key={item.id} className='flex flex-col items-center justify-center gap-2'>
-                 <img src={item.Image} alt={item.title} />
-               <a href={'/products/'+item.id}><h3 className='text-xl font-semibold text-center'>{item.title}</h3></a>  
+            searchByFood.map((product) =>(
+                <div key={product.id} className='flex flex-col items-center justify-center gap-2'>
+                 <img src={product.Image} alt={product.title} />
+               <a href={'/products/'+product.id}><h3 className='text-xl font-semibold text-center'>{product.title}</h3></a>  
                 </div>
             ))
         }
